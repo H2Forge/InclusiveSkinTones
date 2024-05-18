@@ -7,24 +7,27 @@ namespace SkinTones
 {
     public class InclusiveSkinTonesMod : Mod
     {
-        //Static but needed to ExposeData()
-        SkinTonesSettings _settings;
+        
         public InclusiveSkinTonesMod(ModContentPack content) : base(content)
         {
-            this._settings = GetSettings<SkinTonesSettings>();
+            //Static but needed to ExposeData()
+            GetSettings<SkinTonesSettings>();
 
             var harmony = new Harmony("h2forge.InclusiveSkinTones");
             harmony.PatchAll();
         }
+
+        //GUI box
         public override void DoSettingsWindowContents(Rect inRect)
         {
             var listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.CheckboxLabeled("Red Skin Tone Shader", ref SkinTonesSettings.ApplySkinShader, "Toggle on/off the red shadow skin shader for all skin tones.");
+            listingStandard.CheckboxLabeled("Red Skin Tone Shader (requires restart)", ref SkinTonesSettings.ApplySkinShader, "Toggle on/off the red shadow skin shader for light skin. (Effect is subtle and requires restart)");
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
         
+        //Show up in list of settings.
         public override string SettingsCategory()
         {
             return "InclusiveSkinTones";
