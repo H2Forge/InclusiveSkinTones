@@ -7,9 +7,12 @@ namespace SkinTones
 {
     public class InclusiveSkinTonesMod : Mod
     {
+        //Static but needed to ExposeData()
+        SkinTonesSettings _settings;
         public InclusiveSkinTonesMod(ModContentPack content) : base(content)
         {
-            
+            this._settings = GetSettings<SkinTonesSettings>();
+
             var harmony = new Harmony("h2forge.InclusiveSkinTones");
             harmony.PatchAll();
         }
