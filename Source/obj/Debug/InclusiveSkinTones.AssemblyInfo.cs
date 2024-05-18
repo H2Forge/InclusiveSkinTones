@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InclusiveSkinTones")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+943dc1221e802f7e6c68e27fe1e84b56cdb10afc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+398677ed8896d7d0023151447f65db042fc3e358")]
 [assembly: System.Reflection.AssemblyProductAttribute("InclusiveSkinTones")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InclusiveSkinTones")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

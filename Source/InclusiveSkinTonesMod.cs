@@ -22,7 +22,7 @@ namespace SkinTones
         {
             var listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.CheckboxLabeled("Red Skin Tone Shader (requires restart)", ref SkinTonesSettings.ApplySkinShader, "Toggle on/off the red shadow skin shader for light skin. (Effect is subtle and requires restart)");
+            listingStandard.CheckboxLabeled("Red Skin Tone Shader (requires quit to main menu)", ref SkinTonesSettings.ApplySkinShader, "Toggle on/off the red shadow skin shader for light skin. (Effect is subtle and requires only a scene restart for existing pawns. No need for a full restart.)");
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
         }
