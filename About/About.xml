@@ -20,5 +20,6 @@
 	</modDependencies>
 	<loadAfter>
 		<li>brrainz.harmony</li>
+		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 </ModMetaData>
